@@ -1,0 +1,43 @@
+{
+  "adminPage": {
+    "emailInput": "input[name=\"email\"]",
+    "passwordInput": "input[name=\"password\"]",
+    "submitButton": "input[type=\"submit\"]",
+    "errorMessage": "Ошибка авторизации!",
+    "sections": {
+      "hallManagement": "Управление залами",
+      "hallConfig": "Конфигурация залов",
+      "sales": "Открыть продажи"
+    },
+    "startSales": {
+      "radio": "#start-sales .conf-step__radio",
+      "selectorLabel": ".conf-step__selector",
+      "statusText": "#start-sales .conf-step__wrapper.text-center .conf-step__paragraph",
+      "openSalesText": "Продажа билетов открыта!!!"
+    }
+  },
+  "mainPage": {
+    "headerTitle": ".page-header__title",
+    "navDay": ".page-nav__day",
+    "navDayChosen": ".page-nav__day_chosen",
+    "movieCard": ".movie",
+    "movieTitle": ".movie__title",
+    "movieDescription": ".movie__synopsis",
+    "moviePoster": ".movie__poster-image",
+    "movieHallTitle": ".movie-seances__hall-title",
+    "movieSeanceTime": ".movie-seances__time",
+    "movieSeanceTimeEnabled": ".movie-seances__time:not(.acceptin-button-disabled)"
+  },
+  "hallPage": {
+    "movieTitle": ".buying__info-title",
+    "hallTitle": ".buying__info-hall",
+    "availableChair": ".buying-scheme__chair:not(.buying-scheme__chair_taken):not(.buying-scheme__chair_disabled)",
+    "bookingButton": ".acceptin-button"
+  },
+  "paymentPage": {
+    "title": ".ticket__check-title",
+    "hallValue": ".ticket__hall",
+    "costValue": ".ticket__cost"
+  }
+}
+

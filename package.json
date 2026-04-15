@@ -1,0 +1,22 @@
+{
+  "name": "7.7.-cypress_2",
+  "version": "1.0.0",
+  "description": "Cypress E2E tests for the Qamid cinema booking app",
+  "scripts": {
+    "cy:open": "env -u ELECTRON_RUN_AS_NODE cypress open",
+    "cy:run": "env -u ELECTRON_RUN_AS_NODE cypress run",
+    "cy:record": "env -u ELECTRON_RUN_AS_NODE cypress run --record",
+    "cy:run:admin": "env -u ELECTRON_RUN_AS_NODE cypress run --spec 'cypress/e2e/admin-login.cy.js' --record",
+    "cy:run:booking": "env -u ELECTRON_RUN_AS_NODE cypress run --spec 'cypress/e2e/booking.cy.js' --record",
+    "cy:run:main": "env -u ELECTRON_RUN_AS_NODE cypress run --spec 'cypress/e2e/main-page.cy.js' --record",
+    "cy:parallel": "npm run cy:run:admin & npm run cy:run:booking & npm run cy:run:main",
+    "test": "env -u ELECTRON_RUN_AS_NODE cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  }
+}
